@@ -1,122 +1,140 @@
 
-/*Overall box dimensions */
+/*Overall box dimensions include border & padding */
 * {
-    width: 960px;
     box-sizing: border-box;  
 }
-/*banner for all htmls*/
-header {
-    text-align-last: right;
+/*General styling [font, size, & color] + page width + elements*/
+body {
+    background: url('../images/concrete-texture.png');
+    font-size: 18px;
+    line-height: 34px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
 }
-/*anchors*/
-a {
-    background: #ffffff;
-    color: grey;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    text: right;
-    padding-inline-end: 10px;
-}
-/*name*/
-h1 {
-    float: left;
-    background: #4aaaa5;
-    color: #ffffff;
-    width: 300px;
-    height: 85px;
-    text-align: center;
-    margin-left: 60px;
-    font-size: 36px;
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
     clear: both;
 }
+h1, h2, h3, p {
+    margin-bottom: 20px;
+}
+p:last-child {
+    margin-bottom: 0px;
+}
+h1, h2, h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: 700;
+    color: #4aaaa5;
+}
+h1 {
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #dddddd;
+    padding-bottom: 20px;
+}
+h2, h3 {
+    font-size: 22px;
+}
+/*banner~header for all htmls*/
+#masthead {
+    background: #ffffff;
+    margin: 0 0 30px;
+    z-index: 99;
+    color: #ffffff;
+    overflow: auto;
+    border-bottom: 2px solid #cccccc;
+    position: fixed; 
+    width: 100%;
+}
+/*personal name*/
+#logo {
+    width: 250px;
+    height: 90px;
+    background: #4aaaa5;
+    float: left;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+    line-height: 90px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+}
+/*anchors*/
+nav {
+    float: right;
+    margin-top: 25px;
+}
+nav a {
+    color: #999999;
+    text-decoration: none;
+    margin-left: 15px;
+    display: inline-block;
+    border-left: 1px solid #efefef;
+    padding-left: 15px;
+    line-height: 18px;
+}
+/*1st child=About*/
+nav a:first-child {
+    border-left: 0 none;
+}
+/*main content areas*/
+#big-container {
+    padding-top: 130px;
+}
+.main-container {
+    background: #ffffff;
+    padding: 30px;
+    margin: 0 0 40px 0;
+    width: 100%;
+    max-width: 650px;
+    float:left;
+    border: 1px solid #dddddd;
+}
+.auth-image {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    float: left;
+    margin-right: 25px;
+}
+/*sidebar area*/
+.sidebar {
+    background: #ffffff;
+    padding: 30px;
+    width: 100%;
+    max-width: 270px;
+    float: right;
+    border: 1px solid #dddddd;
+    margin-bottom: 20px;
+}
+h3, .sidebar, h2 {
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+.social {
+    width: 62px;
+    height: 62px;
+    margin-top: 8px;
+    margin-bottom: 5px; 
+}
+.social:last-child {
+    margin-right: 0;
+}
+
 /*footer for all htmls*/
 
 footer {
-    height 100px;
     background: #666666;
+    color: #ffffff;
+    padding: 30px 0;
+    clear: both;
+    border-top: 8px solid #4aaaa5;
+    color: #cccccc;
+    font-size: 12px;
     text-align: center;
-    border-top: 10px solid #4aaaa5;
-}
-/*main content areas*/
-    /*about html page*/
-}
-.about-wrapper {
-    width: 900px;
-    background:#ffffff;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding: 0;
-    text-align: justify;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 18px;
-    box-sizing: border-box;
-}
-
-#image {
-    clear: both;
-}
-p {
-    text-align: justify;
-    padding-left: 15px;
-}
-    /*portfolio html page*/
-
-.portfolio-wrapper {
-    width: 900px;
-    background:#ffffff;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding: 0;
-    text-align: justify;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 18px;
-    box-sizing: border-box;
-}
-#hangman {
-    float: left;
-    width: 100px;
-    height: 100px;
-}
-#RPG {
-    float: left;
-    width: 100px;
-    height: 100px;
-}
-#trivia {
-    clear: both;
-    float: left;
-    width: 100px;
-    height: 100px;
-}
-#widget {
-    float: left;
-    width: 100px;
-    height: 100px;
-}
-#twomen {
-    clear: both;
-    float: left;
-    width: 100px;
-    height: 100px;
-}
- /*contact html page*/
- .contact-box {
-    clear: both;
-    width: 700px;
-    margin: 0 auto;
-    background:#ffffff;
-    border: 1px solid grey;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 18px;
-}
-h2 {
-    color: #4aaaa5;
-.messagebox {
-    clear: both;
-    width: 350px;
-    margin: 0 auto;
-    padding-bottom: 3px;
-    borders: #666666;
-}
-.Submit {
-    color: #4aaaa5;
 }
